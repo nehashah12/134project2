@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>About The Shoe</title>
+    <link rel="stylesheet" href="css/project.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+  $("#flip").click(function(){
+      $("#panel").slideToggle("slow");
+  });
+});
+$(document).ready(function(){
+    $("button").click(function(){
+        $("div").animate({left: '250px'});
+    });
+});
+</script>
+<style>
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+  </head>
+  <body>
+    <a href="index.html">Home</a> <a href="page2.html">Women</a> <a href="page3.html">Men</a> <a href="page4.html">Cart</a>
+    <h1>My Shopping Cart</h1>
+    <p>
+      <a href= "page4.html">Continue Shopping</a> <a href= "page4.html">Proceed to Checkout</a>
+    </p>
+    <h4> Items in cart:</h4>
+      <img src="images/boatshoes.jpg" alt="">
+      <img src="images/workshoes.jpg" alt="">
+<button>Proceed to checkout</button>
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+      <div id="flip">Click to reveal today's 10% discount code!</div>
+      <div id="panel">spring2017</div>
+  </body>
+</html>
